@@ -19,7 +19,7 @@ At version 1.0 the GM sets up a world once (regions, roads, politics, species), 
 
 ## System-neutral
 
-Purveyor's Broadside is its own design and is not tied to any one game. Species, coins, goods and shop types are all defined by the GM. Optional packs built from the System Reference Document (SRD) can be switched on, and the credit they require is added automatically.
+Purveyor's Broadsheet is its own design and is not tied to any one game. Species, coins, goods and shop types are all defined by the GM. Optional packs built from the System Reference Document (SRD) can be switched on, and the credit they require is added automatically.
 
 ## Roadmap
 

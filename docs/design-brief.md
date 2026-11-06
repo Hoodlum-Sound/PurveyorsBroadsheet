@@ -1,10 +1,10 @@
-# Purveyor's Broadside — Design Brief v0.0
+# Purveyor's Broadsheet — Design Brief v0.0
 
 Nov 6, 2026 · John Wess
 
 ## Vision and principles
 
-Purveyor's Broadside lets a Game Master set a few dials and get a believable shop: what it sells, what it buys, and at what price. It is our own design for any fantasy tabletop game, with an optional pack of SRD content, so it can be published and sold.
+Purveyor's Broadsheet lets a Game Master set a few dials and get a believable shop: what it sells, what it buys, and at what price. It is our own design for any fantasy tabletop game, with an optional pack of SRD content, so it can be published and sold.
 
 - **The DM's world comes first.** Every input, rule, table and result is editable. The app proposes; the DM decides.
 - **Causes, not flags.** Stock follows from resources, species, size and trade, so each shop has a reason the DM can explain to the players.

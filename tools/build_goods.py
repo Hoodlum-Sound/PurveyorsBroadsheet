@@ -1,4 +1,4 @@
-"""Builds data/goods/*.json for Purveyor's Broadside (draft 0.1).
+"""Builds data/goods/*.json for Purveyor's Broadsheet (draft 0.1).
 Run from anywhere:  python3 tools/build_goods.py
 All values are first guesses to be tuned. Money is whole base units (cp=1, sp=10, gp=100).
 """
@@ -164,7 +164,7 @@ for a in ANCHOR:
 header = {
  "schemaVersion": 1,
  "pack": "own",
- "title": "Purveyor's Broadside - own goods list",
+ "title": "Purveyor's Broadsheet - own goods list",
  "status": "draft 0.1; every value is a first guess to tune",
  "moneyUnit": "Values are whole numbers in base units. Suggested presets: 10 base units = 1 silver-style coin, 100 = 1 gold-style coin. The GM names the coins.",
  "calibration": "Goods with an anchoredTo field were priced against the SRD 5.1 Trade Goods table (see srd-5.1-trade-goods.json). The app must show the SRD 5.1 attribution whenever any such good is enabled.",

@@ -1,6 +1,6 @@
 # Purveyors Broadside
-### Economics App for D&amp;D 5e
-This is a tool to help the Dungeon Master create complexity in their Campaigns. 
+### Economics App for D&amp;D 5.5e
+This is a tool to help the Dungeon Master create economic complexity in their Campaigns. 
 
 #### Community Size
 1. ###### Thorp

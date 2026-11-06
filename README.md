@@ -1,4 +1,4 @@
-# Purveyor's Broadside
+# Purveyor's Broadsheet
 
 **A shop and market generator for Game Masters and world builders of any fantasy tabletop game.**
 

@@ -40,5 +40,8 @@ __pycache__/
 # Third-party material we do not redistribute
 # Copyrighted research papers: keep them locally, not in the public repo.
 research/
-# Legacy file named for a Wizards of the Coast setting; reference only, never ships.
-legacy/MarketsWaterdeep.xlsx
+# Old spreadsheets and CSV: reference for our own discussion, not for the public repo.
+# (Includes a file named for a Wizards of the Coast setting that must never ship.)
+legacy/
+# SRD source PDFs: kept locally as reference, not republished here.
+SRD/

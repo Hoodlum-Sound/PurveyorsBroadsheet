@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "pack": "srd-5.1",
+  "title": "SRD 5.1 Trade Goods",
+  "license": "CC-BY-4.0",
+  "sourcePage": "System Reference Document 5.1, Trade Goods table, p. 72",
+  "attribution": "This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.",
+  "moneyUnit": "Whole numbers in base units: 1 copper piece = 1, 1 silver piece = 10, 1 gold piece = 100.",
+  "goods": [
+    {
+      "id": "srd51_wheat",
+      "name": "Wheat",
+      "unit": "lb",
+      "group": "staples",
+      "category": "trade good",
+      "baseValue": 1,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_flour",
+      "name": "Flour",
+      "unit": "lb",
+      "group": "staples",
+      "category": "trade good",
+      "baseValue": 2,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_chicken",
+      "name": "Chicken",
+      "unit": "each",
+      "group": "livestock",
+      "category": "trade good",
+      "baseValue": 2,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_salt",
+      "name": "Salt",
+      "unit": "lb",
+      "group": "staples",
+      "category": "trade good",
+      "baseValue": 5,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_iron",
+      "name": "Iron",
+      "unit": "lb",
+      "group": "metals",
+      "category": "trade good",
+      "baseValue": 10,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_canvas",
+      "name": "Canvas",
+      "unit": "sq yd",
+      "group": "cloth",
+      "category": "trade good",
+      "baseValue": 10,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_copper",
+      "name": "Copper",
+      "unit": "lb",
+      "group": "metals",
+      "category": "trade good",
+      "baseValue": 50,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_cotton_cloth",
+      "name": "Cotton cloth",
+      "unit": "sq yd",
+      "group": "cloth",
+      "category": "trade good",
+      "baseValue": 50,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_ginger",
+      "name": "Ginger",
+      "unit": "lb",
+      "group": "spices",
+      "category": "trade good",
+      "baseValue": 100,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_goat",
+      "name": "Goat",
+      "unit": "each",
+      "group": "livestock",
+      "category": "trade good",
+      "baseValue": 100,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_cinnamon",
+      "name": "Cinnamon",
+      "unit": "lb",
+      "group": "spices",
+      "category": "trade good",
+      "baseValue": 200,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_pepper",
+      "name": "Pepper",
+      "unit": "lb",
+      "group": "spices",
+      "category": "trade good",
+      "baseValue": 200,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_sheep",
+      "name": "Sheep",
+      "unit": "each",
+      "group": "livestock",
+      "category": "trade good",
+      "baseValue": 200,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_cloves",
+      "name": "Cloves",
+      "unit": "lb",
+      "group": "spices",
+      "category": "trade good",
+      "baseValue": 300,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_pig",
+      "name": "Pig",
+      "unit": "each",
+      "group": "livestock",
+      "category": "trade good",
+      "baseValue": 300,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_silver",
+      "name": "Silver",
+      "unit": "lb",
+      "group": "metals",
+      "category": "trade good",
+      "baseValue": 500,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_linen",
+      "name": "Linen",
+      "unit": "sq yd",
+      "group": "cloth",
+      "category": "trade good",
+      "baseValue": 500,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_silk",
+      "name": "Silk",
+      "unit": "sq yd",
+      "group": "cloth",
+      "category": "trade good",
+      "baseValue": 1000,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_cow",
+      "name": "Cow",
+      "unit": "each",
+      "group": "livestock",
+      "category": "trade good",
+      "baseValue": 1000,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_saffron",
+      "name": "Saffron",
+      "unit": "lb",
+      "group": "spices",
+      "category": "trade good",
+      "baseValue": 1500,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_ox",
+      "name": "Ox",
+      "unit": "each",
+      "group": "livestock",
+      "category": "trade good",
+      "baseValue": 1500,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_gold",
+      "name": "Gold",
+      "unit": "lb",
+      "group": "metals",
+      "category": "trade good",
+      "baseValue": 5000,
+      "source": [
+        "srd-5.1"
+      ]
+    },
+    {
+      "id": "srd51_platinum",
+      "name": "Platinum",
+      "unit": "lb",
+      "group": "metals",
+      "category": "trade good",
+      "baseValue": 50000,
+      "source": [
+        "srd-5.1"
+      ]
+    }
+  ]
+}

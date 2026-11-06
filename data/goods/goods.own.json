@@ -1,0 +1,2476 @@
+{
+  "schemaVersion": 1,
+  "pack": "own",
+  "title": "Purveyor's Broadside - own goods list",
+  "status": "draft 0.1; every value is a first guess to tune",
+  "moneyUnit": "Values are whole numbers in base units. Suggested presets: 10 base units = 1 silver-style coin, 100 = 1 gold-style coin. The GM names the coins.",
+  "calibration": "Goods with an anchoredTo field were priced against the SRD 5.1 Trade Goods table (see srd-5.1-trade-goods.json). The app must show the SRD 5.1 attribution whenever any such good is enabled.",
+  "fields": {
+    "group": "Where it comes from: a resource, craft, trade or fantastic.",
+    "category": "raw, processed, luxury or fantastic.",
+    "unit": "What baseValue is quoted per.",
+    "weightLb": "Weight of one unit, in pounds; drives transport cost.",
+    "perishableDays": "Days until it spoils, or null.",
+    "tier": "1-5: how skilled a maker and how large a market it needs.",
+    "resources": "Resource checkboxes that can supply it.",
+    "inputs": "Goods used to make it.",
+    "demand": "necessity, ordinary or luxury: how strongly demand reacts to price and income.",
+    "magicTier": "Fantastic goods only: 1 common, 2 fine, 3 rare, 4 marvelous.",
+    "source": "own, or own plus srd-5.1 when priced against an SRD anchor."
+  },
+  "resourceKeys": [
+    "mines",
+    "quarries",
+    "farms",
+    "fisheries",
+    "game",
+    "timber",
+    "husbandry"
+  ],
+  "goods": [
+    {
+      "id": "iron_ore",
+      "name": "Iron ore",
+      "group": "mines",
+      "category": "raw",
+      "unit": "sack (50 lb)",
+      "weightLb": 50,
+      "baseValue": 150,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "mines"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "metal",
+        "ore"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "copper_ore",
+      "name": "Copper ore",
+      "group": "mines",
+      "category": "raw",
+      "unit": "sack (50 lb)",
+      "weightLb": 50,
+      "baseValue": 600,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "mines"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "metal",
+        "ore"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "tin_ore",
+      "name": "Tin ore",
+      "group": "mines",
+      "category": "raw",
+      "unit": "sack (50 lb)",
+      "weightLb": 50,
+      "baseValue": 1100,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "mines"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "metal",
+        "ore"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "silver_ore",
+      "name": "Silver ore",
+      "group": "mines",
+      "category": "raw",
+      "unit": "sack (50 lb)",
+      "weightLb": 50,
+      "baseValue": 5000,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "mines"
+      ],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "metal",
+        "ore",
+        "precious"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "coal",
+      "name": "Coal",
+      "group": "mines",
+      "category": "raw",
+      "unit": "sack (50 lb)",
+      "weightLb": 50,
+      "baseValue": 25,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "mines"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "fuel"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "rock_salt",
+      "name": "Rock salt",
+      "group": "mines",
+      "category": "raw",
+      "unit": "sack (50 lb)",
+      "weightLb": 50,
+      "baseValue": 220,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "mines"
+      ],
+      "inputs": [],
+      "demand": "necessity",
+      "tags": [
+        "food",
+        "preservative"
+      ],
+      "source": [
+        "own",
+        "srd-5.1"
+      ],
+      "anchoredTo": "srd51_salt"
+    },
+    {
+      "id": "gems_rough",
+      "name": "Rough precious stones",
+      "group": "mines",
+      "category": "raw",
+      "unit": "oz",
+      "weightLb": 0.0625,
+      "baseValue": 1500,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "mines"
+      ],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "gem"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "building_stone",
+      "name": "Building stone",
+      "group": "quarries",
+      "category": "raw",
+      "unit": "cartload",
+      "weightLb": 2000,
+      "baseValue": 300,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "quarries"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "building",
+        "stone"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "marble_rough",
+      "name": "Marble, rough block",
+      "group": "quarries",
+      "category": "raw",
+      "unit": "block (1 cu ft)",
+      "weightLb": 170,
+      "baseValue": 800,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "quarries"
+      ],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "building",
+        "stone",
+        "fine"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "lime",
+      "name": "Quicklime",
+      "group": "quarries",
+      "category": "raw",
+      "unit": "sack (50 lb)",
+      "weightLb": 50,
+      "baseValue": 45,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "quarries"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "building"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "clay",
+      "name": "Clay",
+      "group": "quarries",
+      "category": "raw",
+      "unit": "sack (50 lb)",
+      "weightLb": 50,
+      "baseValue": 15,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "quarries"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "craft material"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "grain",
+      "name": "Grain",
+      "group": "farms",
+      "category": "raw",
+      "unit": "sack (50 lb)",
+      "weightLb": 50,
+      "baseValue": 50,
+      "perishableDays": 365,
+      "tier": 1,
+      "resources": [
+        "farms"
+      ],
+      "inputs": [],
+      "demand": "necessity",
+      "tags": [
+        "food",
+        "grain"
+      ],
+      "source": [
+        "own",
+        "srd-5.1"
+      ],
+      "anchoredTo": "srd51_wheat"
+    },
+    {
+      "id": "barley",
+      "name": "Barley",
+      "group": "farms",
+      "category": "raw",
+      "unit": "sack (50 lb)",
+      "weightLb": 50,
+      "baseValue": 45,
+      "perishableDays": 365,
+      "tier": 1,
+      "resources": [
+        "farms"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "food",
+        "grain",
+        "brewing"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "oats",
+      "name": "Oats",
+      "group": "farms",
+      "category": "raw",
+      "unit": "sack (50 lb)",
+      "weightLb": 50,
+      "baseValue": 35,
+      "perishableDays": 365,
+      "tier": 1,
+      "resources": [
+        "farms"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "food",
+        "grain",
+        "fodder"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "hay",
+      "name": "Hay",
+      "group": "farms",
+      "category": "raw",
+      "unit": "bale (40 lb)",
+      "weightLb": 40,
+      "baseValue": 12,
+      "perishableDays": 180,
+      "tier": 1,
+      "resources": [
+        "farms"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "fodder"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "root_veg",
+      "name": "Root vegetables",
+      "group": "farms",
+      "category": "raw",
+      "unit": "sack (50 lb)",
+      "weightLb": 50,
+      "baseValue": 40,
+      "perishableDays": 90,
+      "tier": 1,
+      "resources": [
+        "farms"
+      ],
+      "inputs": [],
+      "demand": "necessity",
+      "tags": [
+        "food"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "fruit_fresh",
+      "name": "Fresh fruit",
+      "group": "farms",
+      "category": "raw",
+      "unit": "basket (20 lb)",
+      "weightLb": 20,
+      "baseValue": 40,
+      "perishableDays": 10,
+      "tier": 1,
+      "resources": [
+        "farms"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "food"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "flax",
+      "name": "Flax",
+      "group": "farms",
+      "category": "raw",
+      "unit": "bundle (20 lb)",
+      "weightLb": 20,
+      "baseValue": 60,
+      "perishableDays": 365,
+      "tier": 1,
+      "resources": [
+        "farms"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "fiber"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "hops",
+      "name": "Hops",
+      "group": "farms",
+      "category": "raw",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 9,
+      "perishableDays": 180,
+      "tier": 1,
+      "resources": [
+        "farms"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "brewing"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "herbs",
+      "name": "Culinary herbs",
+      "group": "farms",
+      "category": "raw",
+      "unit": "bundle (1 lb)",
+      "weightLb": 1,
+      "baseValue": 15,
+      "perishableDays": 10,
+      "tier": 1,
+      "resources": [
+        "farms"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "food",
+        "medicine"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "honey",
+      "name": "Honey",
+      "group": "farms",
+      "category": "raw",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 16,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "farms",
+        "husbandry"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "food",
+        "sweetener"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "grapes",
+      "name": "Wine grapes",
+      "group": "farms",
+      "category": "raw",
+      "unit": "basket (20 lb)",
+      "weightLb": 20,
+      "baseValue": 50,
+      "perishableDays": 7,
+      "tier": 1,
+      "resources": [
+        "farms"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "food",
+        "brewing"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "dye_plants",
+      "name": "Dye plants",
+      "group": "farms",
+      "category": "raw",
+      "unit": "bundle (10 lb)",
+      "weightLb": 10,
+      "baseValue": 70,
+      "perishableDays": 60,
+      "tier": 1,
+      "resources": [
+        "farms"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "dye"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "fish_fresh",
+      "name": "Fresh fish",
+      "group": "fisheries",
+      "category": "raw",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 2,
+      "perishableDays": 3,
+      "tier": 1,
+      "resources": [
+        "fisheries"
+      ],
+      "inputs": [],
+      "demand": "necessity",
+      "tags": [
+        "food"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "fish_salted",
+      "name": "Salted fish",
+      "group": "fisheries",
+      "category": "processed",
+      "unit": "barrel (100 lb)",
+      "weightLb": 100,
+      "baseValue": 350,
+      "perishableDays": 365,
+      "tier": 2,
+      "resources": [
+        "fisheries"
+      ],
+      "inputs": [
+        "fish_fresh",
+        "sea_salt"
+      ],
+      "demand": "necessity",
+      "tags": [
+        "food",
+        "preserved"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "fish_smoked",
+      "name": "Smoked fish",
+      "group": "fisheries",
+      "category": "processed",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 5,
+      "perishableDays": 120,
+      "tier": 2,
+      "resources": [
+        "fisheries"
+      ],
+      "inputs": [
+        "fish_fresh"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "food",
+        "preserved"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "fish_oil",
+      "name": "Fish oil",
+      "group": "fisheries",
+      "category": "raw",
+      "unit": "gallon",
+      "weightLb": 8,
+      "baseValue": 30,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "fisheries"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "oil",
+        "lighting"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "pearls",
+      "name": "Freshwater pearls",
+      "group": "fisheries",
+      "category": "raw",
+      "unit": "dozen",
+      "weightLb": 0.06,
+      "baseValue": 800,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "fisheries"
+      ],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "gem"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "sea_salt",
+      "name": "Sea salt",
+      "group": "fisheries",
+      "category": "raw",
+      "unit": "sack (50 lb)",
+      "weightLb": 50,
+      "baseValue": 180,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "fisheries"
+      ],
+      "inputs": [],
+      "demand": "necessity",
+      "tags": [
+        "food",
+        "preservative"
+      ],
+      "source": [
+        "own",
+        "srd-5.1"
+      ],
+      "anchoredTo": "srd51_salt"
+    },
+    {
+      "id": "pelts_small",
+      "name": "Small-game pelts",
+      "group": "game",
+      "category": "raw",
+      "unit": "each",
+      "weightLb": 1,
+      "baseValue": 20,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "game"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "fur"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "pelts_fine",
+      "name": "Fine furs",
+      "group": "game",
+      "category": "raw",
+      "unit": "each",
+      "weightLb": 1,
+      "baseValue": 300,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "game"
+      ],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "fur",
+        "fine"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "hide_raw",
+      "name": "Raw hide",
+      "group": "game",
+      "category": "raw",
+      "unit": "each",
+      "weightLb": 30,
+      "baseValue": 60,
+      "perishableDays": 14,
+      "tier": 1,
+      "resources": [
+        "game",
+        "husbandry"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "hide"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "venison",
+      "name": "Venison",
+      "group": "game",
+      "category": "raw",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 4,
+      "perishableDays": 5,
+      "tier": 1,
+      "resources": [
+        "game"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "food",
+        "meat"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "wildfowl",
+      "name": "Wildfowl",
+      "group": "game",
+      "category": "raw",
+      "unit": "each",
+      "weightLb": 2,
+      "baseValue": 8,
+      "perishableDays": 4,
+      "tier": 1,
+      "resources": [
+        "game"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "food",
+        "meat"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "antler_bone",
+      "name": "Antler and bone",
+      "group": "game",
+      "category": "raw",
+      "unit": "sack (20 lb)",
+      "weightLb": 20,
+      "baseValue": 50,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "game"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "bone",
+        "craft material"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "feathers",
+      "name": "Feathers",
+      "group": "game",
+      "category": "raw",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 30,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "game"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "feather"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "firewood",
+      "name": "Firewood",
+      "group": "timber",
+      "category": "raw",
+      "unit": "cord",
+      "weightLb": 3000,
+      "baseValue": 300,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "timber"
+      ],
+      "inputs": [],
+      "demand": "necessity",
+      "tags": [
+        "fuel"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "lumber_rough",
+      "name": "Rough plank (12 ft)",
+      "group": "timber",
+      "category": "raw",
+      "unit": "each",
+      "weightLb": 30,
+      "baseValue": 18,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "timber"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "building",
+        "wood"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "lumber_fine",
+      "name": "Seasoned hardwood plank (12 ft)",
+      "group": "timber",
+      "category": "raw",
+      "unit": "each",
+      "weightLb": 45,
+      "baseValue": 90,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "timber"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "wood",
+        "fine"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "beam",
+      "name": "Timber beam (10 ft)",
+      "group": "timber",
+      "category": "raw",
+      "unit": "each",
+      "weightLb": 150,
+      "baseValue": 120,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "timber"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "building",
+        "wood"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "charcoal",
+      "name": "Charcoal",
+      "group": "timber",
+      "category": "raw",
+      "unit": "sack (30 lb)",
+      "weightLb": 30,
+      "baseValue": 55,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "timber"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "fuel"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "pitch_tar",
+      "name": "Pitch and tar",
+      "group": "timber",
+      "category": "raw",
+      "unit": "gallon",
+      "weightLb": 10,
+      "baseValue": 40,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "timber"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "sealant"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "tanning_bark",
+      "name": "Tanning bark",
+      "group": "timber",
+      "category": "raw",
+      "unit": "sack (40 lb)",
+      "weightLb": 40,
+      "baseValue": 30,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "timber"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "craft material"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "wool_raw",
+      "name": "Raw wool",
+      "group": "husbandry",
+      "category": "raw",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 8,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "husbandry"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "fiber"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "milk",
+      "name": "Milk",
+      "group": "husbandry",
+      "category": "raw",
+      "unit": "gallon",
+      "weightLb": 8.6,
+      "baseValue": 3,
+      "perishableDays": 2,
+      "tier": 1,
+      "resources": [
+        "husbandry"
+      ],
+      "inputs": [],
+      "demand": "necessity",
+      "tags": [
+        "food"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "cheese",
+      "name": "Cheese",
+      "group": "husbandry",
+      "category": "processed",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 6,
+      "perishableDays": 120,
+      "tier": 2,
+      "resources": [
+        "husbandry"
+      ],
+      "inputs": [
+        "milk"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "food"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "group": "husbandry",
+      "category": "processed",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 8,
+      "perishableDays": 30,
+      "tier": 2,
+      "resources": [
+        "husbandry"
+      ],
+      "inputs": [
+        "milk"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "food"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "eggs",
+      "name": "Eggs",
+      "group": "husbandry",
+      "category": "raw",
+      "unit": "dozen",
+      "weightLb": 1.5,
+      "baseValue": 4,
+      "perishableDays": 21,
+      "tier": 1,
+      "resources": [
+        "husbandry"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "food"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "beeswax",
+      "name": "Beeswax",
+      "group": "husbandry",
+      "category": "raw",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 40,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "husbandry"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "wax"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "tallow",
+      "name": "Tallow",
+      "group": "husbandry",
+      "category": "raw",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 4,
+      "perishableDays": 180,
+      "tier": 1,
+      "resources": [
+        "husbandry"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "fat"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "manure",
+      "name": "Manure",
+      "group": "husbandry",
+      "category": "raw",
+      "unit": "cartload",
+      "weightLb": 2000,
+      "baseValue": 30,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "husbandry"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "fertilizer"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "lamb",
+      "name": "Lamb",
+      "group": "husbandry",
+      "category": "raw",
+      "unit": "each",
+      "weightLb": 60,
+      "baseValue": 70,
+      "perishableDays": null,
+      "tier": 1,
+      "resources": [
+        "husbandry"
+      ],
+      "inputs": [],
+      "demand": "ordinary",
+      "tags": [
+        "livestock"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "flour",
+      "name": "Flour",
+      "group": "craft",
+      "category": "processed",
+      "unit": "sack (50 lb)",
+      "weightLb": 50,
+      "baseValue": 110,
+      "perishableDays": 180,
+      "tier": 2,
+      "resources": [],
+      "inputs": [
+        "grain"
+      ],
+      "demand": "necessity",
+      "tags": [
+        "food",
+        "grain"
+      ],
+      "source": [
+        "own",
+        "srd-5.1"
+      ],
+      "anchoredTo": "srd51_flour"
+    },
+    {
+      "id": "bread",
+      "name": "Bread loaf",
+      "group": "craft",
+      "category": "processed",
+      "unit": "loaf (1 lb)",
+      "weightLb": 1,
+      "baseValue": 3,
+      "perishableDays": 3,
+      "tier": 2,
+      "resources": [],
+      "inputs": [
+        "flour"
+      ],
+      "demand": "necessity",
+      "tags": [
+        "food"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "ale",
+      "name": "Ale",
+      "group": "craft",
+      "category": "processed",
+      "unit": "cask (9 gal)",
+      "weightLb": 80,
+      "baseValue": 100,
+      "perishableDays": 60,
+      "tier": 2,
+      "resources": [],
+      "inputs": [
+        "barley",
+        "hops"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "drink"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "wine_common",
+      "name": "Common wine",
+      "group": "craft",
+      "category": "processed",
+      "unit": "cask (9 gal)",
+      "weightLb": 80,
+      "baseValue": 300,
+      "perishableDays": 365,
+      "tier": 3,
+      "resources": [],
+      "inputs": [
+        "grapes"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "drink"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "wine_fine",
+      "name": "Fine wine",
+      "group": "craft",
+      "category": "processed",
+      "unit": "bottle",
+      "weightLb": 2,
+      "baseValue": 300,
+      "perishableDays": null,
+      "tier": 4,
+      "resources": [],
+      "inputs": [
+        "grapes"
+      ],
+      "demand": "luxury",
+      "tags": [
+        "drink",
+        "fine"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "cloth_wool",
+      "name": "Wool cloth",
+      "group": "craft",
+      "category": "processed",
+      "unit": "sq yd",
+      "weightLb": 1,
+      "baseValue": 40,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [
+        "wool_raw"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "cloth"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "cloth_linen",
+      "name": "Linen cloth",
+      "group": "craft",
+      "category": "processed",
+      "unit": "sq yd",
+      "weightLb": 0.5,
+      "baseValue": 120,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [
+        "flax"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "cloth"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "cloth_canvas",
+      "name": "Canvas",
+      "group": "craft",
+      "category": "processed",
+      "unit": "sq yd",
+      "weightLb": 1,
+      "baseValue": 12,
+      "perishableDays": null,
+      "tier": 2,
+      "resources": [],
+      "inputs": [
+        "flax"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "cloth",
+        "heavy"
+      ],
+      "source": [
+        "own",
+        "srd-5.1"
+      ],
+      "anchoredTo": "srd51_canvas"
+    },
+    {
+      "id": "broadcloth_fine",
+      "name": "Fine dyed wool",
+      "group": "craft",
+      "category": "processed",
+      "unit": "sq yd",
+      "weightLb": 1.5,
+      "baseValue": 260,
+      "perishableDays": null,
+      "tier": 4,
+      "resources": [],
+      "inputs": [
+        "cloth_wool",
+        "dye_common"
+      ],
+      "demand": "luxury",
+      "tags": [
+        "cloth",
+        "fine"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "yarn",
+      "name": "Yarn",
+      "group": "craft",
+      "category": "processed",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 25,
+      "perishableDays": null,
+      "tier": 2,
+      "resources": [],
+      "inputs": [
+        "wool_raw"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "fiber"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "rope",
+      "name": "Hemp rope (50 ft)",
+      "group": "craft",
+      "category": "processed",
+      "unit": "each",
+      "weightLb": 10,
+      "baseValue": 80,
+      "perishableDays": null,
+      "tier": 2,
+      "resources": [],
+      "inputs": [
+        "flax"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "cordage"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "leather",
+      "name": "Tanned leather",
+      "group": "craft",
+      "category": "processed",
+      "unit": "hide",
+      "weightLb": 15,
+      "baseValue": 250,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [
+        "hide_raw",
+        "tanning_bark"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "leather"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "iron_bar",
+      "name": "Iron bar",
+      "group": "craft",
+      "category": "processed",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 10,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [
+        "iron_ore",
+        "charcoal"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "metal"
+      ],
+      "source": [
+        "own",
+        "srd-5.1"
+      ],
+      "anchoredTo": "srd51_iron"
+    },
+    {
+      "id": "steel_bar",
+      "name": "Steel bar",
+      "group": "craft",
+      "category": "processed",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 45,
+      "perishableDays": null,
+      "tier": 4,
+      "resources": [],
+      "inputs": [
+        "iron_bar",
+        "charcoal"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "metal",
+        "fine"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "copper_bar",
+      "name": "Copper ingot",
+      "group": "craft",
+      "category": "processed",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 50,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [
+        "copper_ore",
+        "charcoal"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "metal"
+      ],
+      "source": [
+        "own",
+        "srd-5.1"
+      ],
+      "anchoredTo": "srd51_copper"
+    },
+    {
+      "id": "bronze_ingot",
+      "name": "Bronze ingot",
+      "group": "craft",
+      "category": "processed",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 70,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [
+        "copper_bar",
+        "tin_ore"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "metal"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "silver_bar",
+      "name": "Silver bar",
+      "group": "craft",
+      "category": "processed",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 500,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [
+        "silver_ore",
+        "charcoal"
+      ],
+      "demand": "luxury",
+      "tags": [
+        "metal",
+        "precious"
+      ],
+      "source": [
+        "own",
+        "srd-5.1"
+      ],
+      "anchoredTo": "srd51_silver"
+    },
+    {
+      "id": "gold_bar",
+      "name": "Gold bar",
+      "group": "craft",
+      "category": "processed",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 5000,
+      "perishableDays": null,
+      "tier": 4,
+      "resources": [],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "metal",
+        "precious"
+      ],
+      "source": [
+        "own",
+        "srd-5.1"
+      ],
+      "anchoredTo": "srd51_gold"
+    },
+    {
+      "id": "nails",
+      "name": "Nails",
+      "group": "craft",
+      "category": "processed",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 12,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [
+        "iron_bar"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "hardware"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "tools_basic",
+      "name": "Hand tool (hoe, axe, hammer)",
+      "group": "craft",
+      "category": "processed",
+      "unit": "each",
+      "weightLb": 3,
+      "baseValue": 150,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [
+        "iron_bar",
+        "lumber_rough"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "tool"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "pottery",
+      "name": "Earthenware pottery",
+      "group": "craft",
+      "category": "processed",
+      "unit": "dozen pieces",
+      "weightLb": 12,
+      "baseValue": 60,
+      "perishableDays": null,
+      "tier": 2,
+      "resources": [],
+      "inputs": [
+        "clay",
+        "firewood"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "household"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "bricks",
+      "name": "Fired brick",
+      "group": "craft",
+      "category": "processed",
+      "unit": "hundred",
+      "weightLb": 500,
+      "baseValue": 300,
+      "perishableDays": null,
+      "tier": 2,
+      "resources": [],
+      "inputs": [
+        "clay",
+        "firewood"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "building"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "candles_tallow",
+      "name": "Tallow candles",
+      "group": "craft",
+      "category": "processed",
+      "unit": "dozen",
+      "weightLb": 2,
+      "baseValue": 12,
+      "perishableDays": null,
+      "tier": 2,
+      "resources": [],
+      "inputs": [
+        "tallow"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "lighting"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "candles_wax",
+      "name": "Beeswax candles",
+      "group": "craft",
+      "category": "processed",
+      "unit": "dozen",
+      "weightLb": 2,
+      "baseValue": 90,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [
+        "beeswax"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "lighting"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "soap",
+      "name": "Soap",
+      "group": "craft",
+      "category": "processed",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 10,
+      "perishableDays": null,
+      "tier": 2,
+      "resources": [],
+      "inputs": [
+        "tallow"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "household"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "lamp_oil",
+      "name": "Lamp oil",
+      "group": "craft",
+      "category": "processed",
+      "unit": "flask",
+      "weightLb": 1,
+      "baseValue": 8,
+      "perishableDays": null,
+      "tier": 2,
+      "resources": [],
+      "inputs": [
+        "fish_oil"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "lighting"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "barrel_empty",
+      "name": "Barrel, empty",
+      "group": "craft",
+      "category": "processed",
+      "unit": "each",
+      "weightLb": 40,
+      "baseValue": 120,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [
+        "lumber_rough",
+        "iron_bar"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "container"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "dye_common",
+      "name": "Common dye",
+      "group": "craft",
+      "category": "processed",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 60,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [
+        "dye_plants"
+      ],
+      "demand": "ordinary",
+      "tags": [
+        "dye"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "spice_ginger",
+      "name": "Root spice (ginger type)",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 90,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "spice"
+      ],
+      "source": [
+        "own",
+        "srd-5.1"
+      ],
+      "anchoredTo": "srd51_ginger"
+    },
+    {
+      "id": "spice_pepper",
+      "name": "Hot spice (pepper type)",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 180,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "spice"
+      ],
+      "source": [
+        "own",
+        "srd-5.1"
+      ],
+      "anchoredTo": "srd51_pepper"
+    },
+    {
+      "id": "spice_cinnamon",
+      "name": "Bark spice (cinnamon type)",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 230,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "spice"
+      ],
+      "source": [
+        "own",
+        "srd-5.1"
+      ],
+      "anchoredTo": "srd51_cinnamon"
+    },
+    {
+      "id": "spice_cloves",
+      "name": "Bud spice (clove type)",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 340,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "spice"
+      ],
+      "source": [
+        "own",
+        "srd-5.1"
+      ],
+      "anchoredTo": "srd51_cloves"
+    },
+    {
+      "id": "spice_saffron",
+      "name": "Thread spice (saffron type)",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 1600,
+      "perishableDays": null,
+      "tier": 4,
+      "resources": [],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "spice",
+        "fine"
+      ],
+      "source": [
+        "own",
+        "srd-5.1"
+      ],
+      "anchoredTo": "srd51_saffron"
+    },
+    {
+      "id": "silk",
+      "name": "Silk",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "sq yd",
+      "weightLb": 0.3,
+      "baseValue": 900,
+      "perishableDays": null,
+      "tier": 4,
+      "resources": [],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "cloth",
+        "fine"
+      ],
+      "source": [
+        "own",
+        "srd-5.1"
+      ],
+      "anchoredTo": "srd51_silk"
+    },
+    {
+      "id": "incense",
+      "name": "Incense",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 300,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "ritual"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "perfume",
+      "name": "Perfume oil",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "vial (1 oz)",
+      "weightLb": 0.1,
+      "baseValue": 500,
+      "perishableDays": null,
+      "tier": 4,
+      "resources": [],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "fine"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "sugar",
+      "name": "Sugar",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 60,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "food",
+        "sweetener"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "ivory",
+      "name": "Tusk ivory",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 350,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "fine",
+        "craft material"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "book",
+      "name": "Bound hand-copied book",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "each",
+      "weightLb": 3,
+      "baseValue": 2500,
+      "perishableDays": null,
+      "tier": 5,
+      "resources": [],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "fine",
+        "knowledge"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "jewelry_silver",
+      "name": "Silver jewelry",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "piece",
+      "weightLb": 0.2,
+      "baseValue": 1500,
+      "perishableDays": null,
+      "tier": 4,
+      "resources": [],
+      "inputs": [
+        "silver_bar"
+      ],
+      "demand": "luxury",
+      "tags": [
+        "fine",
+        "jewelry"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "jewelry_gold",
+      "name": "Gold jewelry",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "piece",
+      "weightLb": 0.2,
+      "baseValue": 6000,
+      "perishableDays": null,
+      "tier": 5,
+      "resources": [],
+      "inputs": [
+        "gold_bar"
+      ],
+      "demand": "luxury",
+      "tags": [
+        "fine",
+        "jewelry"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "tapestry",
+      "name": "Tapestry",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "each",
+      "weightLb": 25,
+      "baseValue": 5000,
+      "perishableDays": null,
+      "tier": 5,
+      "resources": [],
+      "inputs": [
+        "cloth_wool",
+        "dye_fine"
+      ],
+      "demand": "luxury",
+      "tags": [
+        "fine",
+        "cloth"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "dye_fine",
+      "name": "Fine dye (deep crimson type)",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "oz",
+      "weightLb": 0.0625,
+      "baseValue": 350,
+      "perishableDays": null,
+      "tier": 4,
+      "resources": [],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "dye",
+        "fine"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "gem_cut_common",
+      "name": "Cut semi-precious stone",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "each",
+      "weightLb": 0.01,
+      "baseValue": 800,
+      "perishableDays": null,
+      "tier": 4,
+      "resources": [],
+      "inputs": [
+        "gems_rough"
+      ],
+      "demand": "luxury",
+      "tags": [
+        "gem"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "gem_cut_fine",
+      "name": "Cut precious stone",
+      "group": "trade",
+      "category": "luxury",
+      "unit": "each",
+      "weightLb": 0.01,
+      "baseValue": 6000,
+      "perishableDays": null,
+      "tier": 5,
+      "resources": [],
+      "inputs": [
+        "gems_rough"
+      ],
+      "demand": "luxury",
+      "tags": [
+        "gem"
+      ],
+      "source": [
+        "own"
+      ]
+    },
+    {
+      "id": "glowmoss",
+      "name": "Glowmoss (cold-light lichen)",
+      "group": "fantastic",
+      "category": "fantastic",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 60,
+      "perishableDays": 60,
+      "tier": 3,
+      "resources": [
+        "quarries"
+      ],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "magic",
+        "lighting"
+      ],
+      "source": [
+        "own"
+      ],
+      "magicTier": 1
+    },
+    {
+      "id": "emberstone",
+      "name": "Emberstone (heat-holding rock)",
+      "group": "fantastic",
+      "category": "fantastic",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 150,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [
+        "mines"
+      ],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "magic",
+        "fuel"
+      ],
+      "source": [
+        "own"
+      ],
+      "magicTier": 1
+    },
+    {
+      "id": "skyfall_iron",
+      "name": "Skyfall iron (meteoric metal)",
+      "group": "fantastic",
+      "category": "fantastic",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 600,
+      "perishableDays": null,
+      "tier": 4,
+      "resources": [
+        "mines"
+      ],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "magic",
+        "metal"
+      ],
+      "source": [
+        "own"
+      ],
+      "magicTier": 2
+    },
+    {
+      "id": "whisperwool",
+      "name": "Whisperwool (sound-dampening wool)",
+      "group": "fantastic",
+      "category": "fantastic",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 200,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [
+        "husbandry"
+      ],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "magic",
+        "fiber"
+      ],
+      "source": [
+        "own"
+      ],
+      "magicTier": 2
+    },
+    {
+      "id": "dreamroot",
+      "name": "Dreamroot (sleep herb)",
+      "group": "fantastic",
+      "category": "fantastic",
+      "unit": "oz",
+      "weightLb": 0.0625,
+      "baseValue": 100,
+      "perishableDays": 30,
+      "tier": 3,
+      "resources": [
+        "farms"
+      ],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "magic",
+        "medicine"
+      ],
+      "source": [
+        "own"
+      ],
+      "magicTier": 1
+    },
+    {
+      "id": "stormglass",
+      "name": "Stormglass (weather-reactive crystal)",
+      "group": "fantastic",
+      "category": "fantastic",
+      "unit": "oz",
+      "weightLb": 0.0625,
+      "baseValue": 500,
+      "perishableDays": null,
+      "tier": 4,
+      "resources": [
+        "mines"
+      ],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "magic",
+        "gem"
+      ],
+      "source": [
+        "own"
+      ],
+      "magicTier": 2
+    },
+    {
+      "id": "beast_hide",
+      "name": "Great-beast hide",
+      "group": "fantastic",
+      "category": "fantastic",
+      "unit": "each",
+      "weightLb": 60,
+      "baseValue": 3000,
+      "perishableDays": null,
+      "tier": 4,
+      "resources": [
+        "game"
+      ],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "magic",
+        "hide"
+      ],
+      "source": [
+        "own"
+      ],
+      "magicTier": 3
+    },
+    {
+      "id": "beast_bone",
+      "name": "Great-beast bone",
+      "group": "fantastic",
+      "category": "fantastic",
+      "unit": "lb",
+      "weightLb": 1,
+      "baseValue": 300,
+      "perishableDays": null,
+      "tier": 4,
+      "resources": [
+        "game"
+      ],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "magic",
+        "bone"
+      ],
+      "source": [
+        "own"
+      ],
+      "magicTier": 3
+    },
+    {
+      "id": "wellspring_water",
+      "name": "Wellspring water (blessed spring)",
+      "group": "fantastic",
+      "category": "fantastic",
+      "unit": "vial",
+      "weightLb": 0.5,
+      "baseValue": 800,
+      "perishableDays": null,
+      "tier": 3,
+      "resources": [],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "magic",
+        "ritual"
+      ],
+      "source": [
+        "own"
+      ],
+      "magicTier": 2
+    },
+    {
+      "id": "shimmerdust",
+      "name": "Shimmerdust (glittering powder)",
+      "group": "fantastic",
+      "category": "fantastic",
+      "unit": "oz",
+      "weightLb": 0.0625,
+      "baseValue": 400,
+      "perishableDays": null,
+      "tier": 4,
+      "resources": [
+        "mines"
+      ],
+      "inputs": [],
+      "demand": "luxury",
+      "tags": [
+        "magic",
+        "dye"
+      ],
+      "source": [
+        "own"
+      ],
+      "magicTier": 2
+    }
+  ]
+}

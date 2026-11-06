@@ -1,0 +1,44 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Office lock and temp files (created while a spreadsheet is open)
+~$*
+.~lock.*
+
+# Editors and tools
+.vscode/
+.idea/
+*.swp
+*~
+
+# Node / TypeScript
+node_modules/
+dist/
+coverage/
+*.log
+
+# Rust (for the later port)
+target/
+
+# Python
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.env.*
+
+# Third-party material we do not redistribute
+# Copyrighted research papers: keep them locally, not in the public repo.
+research/
+# Legacy file named for a Wizards of the Coast setting; reference only, never ships.
+legacy/MarketsWaterdeep.xlsx

@@ -38,9 +38,6 @@ The first release is an installable web app written in TypeScript and structured
 | `docs/` | The design brief |
 | `data/goods/` | The goods lists: our own goods, and a separate pack of SRD 5.1 trade goods used as price anchors |
 | `tools/` | Scripts that build the data files |
-| `research/` | Reference papers behind the economic model |
-| `SRD/` | The SRD documents used as source material |
-| `legacy/` | Earlier spreadsheets, kept for reference only |
 | `Web/` | The web app (placeholder for now) |
 
 ## Design
